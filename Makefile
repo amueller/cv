@@ -1,10 +1,8 @@
 paper:
-	mkdir -p .mk
-	rubber -f -I . -I styles -I images --pdf --into .mk cv 
-	ln -sf .mk/cv.pdf .
+	rubber -f -I . -I styles -I images --pdf cv
 
 all: paper 
 
 clean:
-	rm -rf .mk
-	rm -f cv.pdf
+	rubber -f -I . -I styles -I images --pdf cv --clean
+
