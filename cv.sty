@@ -11,6 +11,9 @@
 \usepackage[compact,small,sf,bf]{titlesec}
 \usepackage{kpfonts,dsfont}
 \usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{urlbordercolor={1 1 1}}
 
 \RaggedRight
 \sloppy
@@ -33,18 +36,24 @@
 \def\maketitle{
 \thispagestyle{plain}
 \vspace*{-1.4cm}
-\shadebox[0.9]{17.3cm}{\sf\color[rgb]{0,0,0}
+%\shadebox[0.9]{17.3cm}{\sf\color[rgb]{0,0,0}
 \hbox to 17cm{\begin{tabular}{p{7.4cm}}
 \LARGE\textbf{\@name}\\[0.3cm]
-\Large\textbf{Curriculum Vitae}\\[0.6cm]
+%\Large\textbf{Curriculum Vitae}
+Lecturer\\
+Columbia University\\
+Department of Computer Science\\
+Columbia Data Science Institute\\[0.6cm]
 \normalsize\today
 \end{tabular}
 \hfill\hbox{\fontsize{9}{12}\sf
 \begin{tabular}{@{}rp{7.2cm}@{}}
 \@info
 \end{tabular}}}
+%}
+\vspace*{0.2cm}
+\hrule
 }
-\vspace*{0.2cm}}
 
 
 % Section headings
